@@ -127,6 +127,7 @@ def terraform_cd(**kwargs):
                 [
                     "tar",
                     "--directory={tmp}".format(tmp=tmp_dir),
+                    "--exclude=\\.env*",
                     "--exclude-vcs",
                     "--exclude-vcs-ignores",
                     "--owner=0",
